@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="divTotal">
+        <div class="div-1">
+       <img id="logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"></img>
+        </div>
+        
+        <div class="div-2">
+            <img id="imagen" src="img/imagen-chibi-1.jpg"></img>
+            <p>Franco Poldi</p>
+            <img src=""></img>
+            <input id="input" type="password" placeholder="Contraseña" maxlength="12"></input>
+            <p>Recordar contraseña</p>
+            <button onclick="iniciarSesion()">Iniciar Sesión.</button>
+        </div>
+    </div>
+
+     <div class="div-3">
+        <p>Este es un software especial de desencriptado.</p>
+        <p>A usted le parecerá algo sencillo, pero este programa cuenta con una extensa y complicada programación de desencriptación de datos.</p>
+        <p>El diseño es medio malo porque nuestros programadores son genios lógicos, como corresponde y no se andan con sonseras de diseño. En confianza les comentamos que para este programa recibimos asesoramiento no oficial del Empresario Mark Zuckerberg. Pero ustedes no van a decir nada... enserio no digan nada... o serán los siguientes... ¡Muajaa!</p>
+        <p>Descubra todos los casi secretos del usuario: {Usuario} . </p>
+        <button onclick="iniciarPrograma()">Iniciar</button>
+     </div>
+
+     <script>
+
+                // alert("Entrando a Facebook.");
+                // alert("Aplicado el software de desencriptación.");
+
+
+
+
+            const parrafo1 = document.createElement("p");
+           const parrafo2 = document.createElement("p");
+           const parrafo3 = document.createElement("p");
+           const parrafo4 = document.createElement("p");
+           const input1 = document.createElement("input");
+           const input2 = document.createElement("input");
+           const input3 = document.createElement("input");
+           const input4 = document.createElement("input");
+          
+
+
+        function iniciarPrograma(){
+          
+           const nuevoDiv = document.createElement("div");
+           const tabla = document.createElement("p");
+
+            const botonObtener = document.createElement("button");
+           
+
+            nuevoDiv.appendChild(tabla);
+            tabla.textContent = "(A=08),  (B=06),  (C=93),  (D=40),  (F=12),  (G=22),  (H=80),  (I=11),  (J=90),  (K=32),  (L=64),  (M=34),  (N=16),  (Ñ=28),  (O=80),  (P=94),  (Q=26),  (R=74),  (S=55),  (T=14),  (U=48),  (V=20),  (W=98),  (X=92),  (Y=76),  Z(=78)";
+
+            nuevoDiv.appendChild(parrafo1);
+            parrafo1.textContent = "Según el nombre del Usuario, ingrese su combinación de números.";
+            nuevoDiv.appendChild(input1);
+
+             nuevoDiv.appendChild(parrafo2);
+            parrafo2.textContent = "Según el apellido del usuario, ingrese su combinación de números.";
+            nuevoDiv.appendChild(input2);
+
+             nuevoDiv.appendChild(parrafo3);
+            parrafo3.textContent = "Según el deporte favorito del usuario, ingrese su combninación de números.";
+            nuevoDiv.appendChild(input3);
+
+             nuevoDiv.appendChild(parrafo4);
+            parrafo4.textContent = "¿Está seguro de que quiere hacer algo tan poco ético y de tan mal compañero/a/s como para que le entreguemos la contraseña con la cual podrá descubrir los secretos de una persona tan buena e inofensiva que seguramente no tiene nada malo que esconder? (solo teclee con letras 'si' o 'no').";
+            nuevoDiv.appendChild(input4);
+            
+            nuevoDiv.appendChild(botonObtener);
+            botonObtener.textContent = "Obtener Contraseña.";
+            botonObtener.onclick = obtenerContrasena; 
+           
+           
+        
+
+            nuevoDiv.style.display = "flex";
+            nuevoDiv.style.flexWrap = "wrap";
+             nuevoDiv.style.background = "#074e0b";
+              nuevoDiv.style.color = "white";
+                nuevoDiv.style.border = "3px solid blue";
+                nuevoDiv.style.padding = "8px";
+
+            tabla.style.fontWeight = "bold";
+             tabla.style.fontSize = "20px";
+
+             parrafo1.style.fontSize = "20px";
+             parrafo1.style.fontFamily= "IBM Plex Sans, sans-serif";
+              parrafo2.style.fontSize = "20px";
+               parrafo2.style.fontFamily= "IBM Plex Sans, sans-serif";
+               parrafo3.style.fontSize = "20px";
+                parrafo3.style.fontFamily= "IBM Plex Sans, sans-serif";
+                parrafo4.style.fontSize = "20px";
+                 parrafo4.style.fontFamily= "IBM Plex Sans, sans-serif";
+
+            input1.style.height = "20px";
+            input1.style.height = "20px";
+            input2.style.height = "20px";
+            input3.style.height = "20px";
+            input4.style.height = "20px";
+
+            input1.style.margin = "auto";
+            input1.style.margin = "auto";
+            input2.style.margin = "auto";
+            input3.style.margin = "auto";
+            input4.style.margin = "auto";
+
+            botonObtener.style.background = "blue";
+            botonObtener.style.fontSize = "20px";
+            botonObtener.style.fontWeight = "bold";
+            botonObtener.style.color = "white";
+             botonObtener.style.fontFamily= "IBM Plex Sans, sans-serif";
+
+            document.body.appendChild(nuevoDiv);
+
+            
+           
+
+        }
+
+        function obtenerContrasena(){
+
+
+             if(input1.value == "1" && input2.value == "1" && input3.value == "1" && input4.value == "si"){
+            const parrafo5 = document.createElement("p");
+            const parrafo6 = document.createElement("p");
+            
+            parrafo5.textContent = "La contraseña es:";
+            parrafo6.style.fontWeight = "bold";
+            parrafo5.style.background = "blue";
+             parrafo5.style.color = "white";
+             parrafo5.style.fontSize = "20px";
+            parrafo6.textContent = "MisSecretosEstanASalvo";
+            parrafo6.style.fontWeight = "bold";
+            parrafo6.style.background = "blue";
+             parrafo6.style.color = "white";
+             parrafo6.style.fontSize = "20px";
+
+            document.body.appendChild(parrafo5);
+            document.body.appendChild(parrafo6);
+           } else{
+             const parrafo5 = document.createElement("p");
+            const parrafo6 = document.createElement("p");
+
+             parrafo5.textContent = "Los datos ingresados son inválidos";
+            parrafo6.style.fontWeight = "bold";
+            parrafo5.style.background = "red";
+             parrafo5.style.color = "white";
+             parrafo5.style.fontSize = "20px";
+            parrafo6.textContent = "No es posible descifrar la contraseña.";
+            parrafo6.style.fontWeight = "bold";
+            parrafo6.style.background = "red";
+             parrafo6.style.color = "white";
+             parrafo6.style.fontSize = "20px";
+           }
+
+        };
+
+        function iniciarSesion(){
+            const input = document.getElementById("input");
+
+            if (input.value == 1){
+               window.location.href="borrador.html";
+            } ;
+        };
+
+
+    </script>
+</body>
+</html>
