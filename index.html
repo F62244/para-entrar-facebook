@@ -21,7 +21,7 @@
             <img id="imagen" src="img/imagen-chibi-1.jpg"></img>
             <p>Franco Poldi</p>
             <img src=""></img>
-            <input id="input" type="password" placeholder="Contraseña" maxlength="12"></input>
+            <input id="input" type="password" placeholder="Contraseña" maxlength="24"></input>
             <p>Recordar contraseña</p>
             <button onclick="iniciarSesion()">Iniciar Sesión.</button>
         </div>
@@ -35,10 +35,14 @@
         <button onclick="iniciarPrograma()">Iniciar</button>
      </div>
 
+     <footer>
+
+    </footer>
+
      <script>
 
-                // alert("Entrando a Facebook.");
-                // alert("Aplicado el software de desencriptación.");
+                alert("Entrando a Facebook.");
+                alert("Aplicado el software de desencriptación.");
 
 
 
@@ -135,9 +139,9 @@
         function obtenerContrasena(){
 
 
-             if(input1.value == "1" && input2.value == "1" && input3.value == "1" && input4.value == "si"){
-            const parrafo5 = document.createElement("p");
-            const parrafo6 = document.createElement("p");
+             if(input1.value == "127408169380" && input2.value == "9480644011" && input3.value == "124814068064" && input4.value == "si"){
+            let parrafo5 = document.createElement("p");
+            let parrafo6 = document.createElement("p");
             
             parrafo5.textContent = "La contraseña es:";
             parrafo6.style.fontWeight = "bold";
@@ -153,8 +157,8 @@
             document.body.appendChild(parrafo5);
             document.body.appendChild(parrafo6);
            } else{
-             const parrafo5 = document.createElement("p");
-            const parrafo6 = document.createElement("p");
+             let parrafo5 = document.createElement("p");
+            let parrafo6 = document.createElement("p");
 
              parrafo5.textContent = "Los datos ingresados son inválidos";
             parrafo6.style.fontWeight = "bold";
@@ -166,6 +170,9 @@
             parrafo6.style.background = "red";
              parrafo6.style.color = "white";
              parrafo6.style.fontSize = "20px";
+
+             document.body.appendChild(parrafo5);
+            document.body.appendChild(parrafo6);
            }
 
         };
@@ -173,7 +180,7 @@
         function iniciarSesion(){
             const input = document.getElementById("input");
 
-            if (input.value == 1){
+            if (input.value == "MisSecretosEstanASalvo"){
                window.location.href="borrador.html";
             } ;
         };

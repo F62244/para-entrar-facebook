@@ -77,3 +77,10 @@ p{
 h2{
     font-family: inherit;
 }
+
+footer{
+    background-image: url("img/logo-footer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
